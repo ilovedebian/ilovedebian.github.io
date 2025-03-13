@@ -151,7 +151,7 @@ body {
 /* Downloads */
 
 .download-button {
-    background-color: #0066CC;
+    background-color: #0066CC;	
     color: #fff;
     padding: 4px 10px;
     border: 1px solid #fff;
@@ -164,6 +164,13 @@ body {
 
 .pg-banner {
     padding-bottom: 15px;
+}
+
+.download-button-line {
+border-top: 1px solid #e4e4e4;
+margin-top: 10px;
+padding-top: 10px;
+width: 220px;
 }
 
 /* Cards */
@@ -216,7 +223,7 @@ body {
 }
 
 .card-header-link.mirror {
-    color: #2b6395;
+    color: #1e69f8;
 }
 
 .line-spacing {
@@ -300,6 +307,11 @@ footer {
 }
 
 .list.specs > * > * {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.list.specs2 > * > * {
     padding-top: 1.5%;
     padding-bottom: 1.5%;
 }
