@@ -2,14 +2,15 @@
 
 @keyframes FadeIn {
     0% {
-      opacity: 0;
-      visibility: hidden;
+        opacity: 0;
+        visibility: hidden;
     }
+
     100% {
-      opacity: 1;
-      visibility: visible;
+        opacity: 1;
+        visibility: visible;
     }
-  }
+}
 
 /* Universal */
 
@@ -37,7 +38,9 @@ body {
     font-size: .83em;
 }
 
-.body-content, .body-content-credits, .body-content.projects {
+.body-content,
+.body-content-credits,
+.body-content.projects {
     background-color: #fff;
     width: 90%;
     max-width: 945px;
@@ -47,7 +50,9 @@ body {
 
 /* Body Length */
 
-.body-content { /* Default */
+.body-content {
+    position: relative;
+    /* Default */
     height: 929%;
 }
 
@@ -96,10 +101,10 @@ body {
 }
 
 .nav-gradient {
-    background: transparent url("Assets/gradient.png") repeat-x scroll 0 -16px;
+    background: transparent url("Assets/gradient.png") repeat-x scroll 0px -16px;
     position: absolute;
     height: 130px;
-    width: 945px;
+    width: 100%;
     top: 0;
     z-index: -2;
 }
@@ -130,7 +135,8 @@ body {
 
 /* Banners */
 
-.banner-content, .banner-content-download {
+.banner-content,
+.banner-content-download {
     color: white;
     padding: 0px 40px;
     background: url(Assets/banner.svg);
@@ -151,7 +157,7 @@ body {
 /* Downloads */
 
 .download-button {
-    background-color: #0066CC;	
+    background-color: #0066CC;
     color: #fff;
     padding: 4px 10px;
     border: 1px solid #fff;
@@ -167,23 +173,21 @@ body {
 }
 
 .download-button-line {
-border-top: 1px solid #e4e4e4;
-margin-top: 10px;
-padding-top: 10px;
-width: 220px;
+    border-top: 1px solid #e4e4e4;
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 220px;
 }
 
 /* Cards */
 
-.content-cards, .content-cards-download {
+.content-cards,
+.content-cards-download {
     border-top: 1px solid #e4e4e4;
-    margin: 0px 50px;
     margin-top: 26px;
     padding-top: 23px;
-    width: 628px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 150px;
 }
 
 .content-cards-download {
@@ -192,26 +196,30 @@ width: 220px;
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-around;
 }
 
-.card-header, .addons-header {
+.card-header,
+.addons-header {
     color: #22436C;
     font-size: 146%;
     font-weight: 400;
     padding-bottom: 25px;
 }
-  
+
 .addons-header {
     padding-bottom: 10px;
 }
 
 .extras {
-    margin-top: 24px;
+    padding-top: 23px;
     width: 198px;
 }
 
-.card, .project-card {
+.card,
+.project-card {
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -238,7 +246,8 @@ width: 220px;
     transition: 0.1s ease-in-out;
 }
 
-.showcase-img, .project-img {
+.showcase-img,
+.project-img {
     padding-bottom: 10px;
 }
 
@@ -269,18 +278,29 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
-    width: 925px;
+    max-width: 925px;
     bottom: 0;
+    padding-top: 150px;
+    gap: 10px;
 }
 
 .footer-404 {
     padding-bottom: 712px;
 }
 
-.copyright, .right-side {
+.copyright,
+.right-side {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.copyright {
+    flex-wrap: wrap;
+}
+
+.right-side {
+    flex-wrap: wrap-reverse
 }
 
 .psa {
@@ -295,6 +315,9 @@ footer {
 
 .real-content {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 50px;
 }
 
 .list {
@@ -306,12 +329,12 @@ footer {
     padding-bottom: 15px;
 }
 
-.list.specs > * > * {
+.list.specs>*>* {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
 }
 
-.list.specs2 > * > * {
+.list.specs2>*>* {
     padding-top: 1.5%;
     padding-bottom: 1.5%;
 }
@@ -361,7 +384,8 @@ footer {
 /* Landing page */
 
 .banner-content,
-.banner-content *, /* Added * so the elements also get wrapped, along with the main element */
+.banner-content *,
+/* Added * so the elements also get wrapped, along with the main element */
 .banner-content-download,
 .banner-content-download *,
 .real-content,
@@ -377,17 +401,21 @@ footer {
 
 /* Darkening when hovering over a link */
 
-.navlinks a:hover, a[href="#"]:hover, a[href^="https"]:not([href*="reunion7.com"]):hover {
+.navlinks a:hover,
+a[href="#"]:hover,
+a[href^="https"]:not([href*="reunion7.com"]):hover {
     filter: brightness(50%);
 }
 
 /* Brighten site logo when hovering */
 
-.reunion-logo, .reunion-logo-footer {
+.reunion-logo,
+.reunion-logo-footer {
     transition: 0.3s ease-in-out;
 }
 
-.reunion-logo:hover, .reunion-logo-footer:hover {
+.reunion-logo:hover,
+.reunion-logo-footer:hover {
     filter: brightness(120%)
 }
 
@@ -423,7 +451,7 @@ footer {
     height: 12px;
     cursor: pointer;
 }
-  
+
 .tooltip .tooltiptext {
     display: none;
     width: 120px;
@@ -439,7 +467,7 @@ footer {
     position: absolute;
     z-index: 1;
 }
-  
+
 .tooltip:hover .tooltiptext {
     display: block;
 }
