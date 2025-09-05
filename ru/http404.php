@@ -3,7 +3,7 @@
     <head>
         <title>404 | Reunion7</title>
         <meta property="og:title" content="Reunion7">
-        <meta property="og:description" content="Добро пожаловать в Reunion7 — модификацию Windows, которая стремится быть неотличимой от Windows 7.">
+        <meta property="og:description" content="Добро пожаловать в Reunion7 — сборку Windows, которая стремится быть неотличимой от Windows 7.">
         <meta property="og:image" content="https://reunion7.com/Assets/seo.png">
         <meta property="og:url" content="https://reunion7.com/ru/404.html">
         <meta property="og:type" content="website">
